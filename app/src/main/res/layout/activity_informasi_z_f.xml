@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformasiZF">
+    <ScrollView
+        android:id="@+id/ScrollViewIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:padding="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_header"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zakat Fitrah "
+                android:textSize="40sp"
+                android:textColor="@color/biruTua"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/biruTua"
+                android:text="Zakat fitrah adalah zakat yang wajib dikeluarkan umat muslim menjelang Idul Fitri pada bulan suci Ramadhan. Besar zakat ini setara dengan 2,5kg atau 3,5 liter beras atau makanan pokok per jiwa . beras atau makanan pokok tersebut dapat diganti dengan uang seharga 2,5 kg atau 3,5 liter beras yang diberikan kepada lembaga - lembaga penyalur zakat."
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"
+                />
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="100dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:background="@color/White"
+                    android:layout_width="65dp"
+                    android:clickable="false"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/btn_share"
+                    />
+
+                <Button
+                    android:id="@+id/btn_share"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/White"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Share"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/biru"
+                    android:text="Back"
+                    android:textColor="#fff"
+                    android:textSize="24sp"/>
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/biru"
+                    android:text="Next"
+                    android:textColor="#fff"
+                    android:textSize="24sp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

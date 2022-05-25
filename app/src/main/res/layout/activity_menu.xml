@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <ScrollView
+        android:id="@+id/ScrollViewIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_header"/>
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@color/White"
+                    android:layout_width="65dp"
+                    android:clickable="false"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/img_fitrah"
+                    />
+
+                <Button
+                    android:id="@+id/btn_fitrah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="Zakat Fitrah"
+                    android:textColorHint="@color/colorPrimary"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/img_next_page"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:clickable="false"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:background="@color/White"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/img_harta"
+                    />
+
+                <Button
+                    android:id="@+id/btn_harta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="Zakat Mal"
+                    android:background="@color/White"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:drawableRight="@drawable/img_next_page"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:clickable="false"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:background="@color/White"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/img_donasi"
+                    />
+
+                <Button
+                    android:id="@+id/btn_donasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="Donasi Zakat"
+                    android:background="@color/White"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:drawableRight="@drawable/img_next_page"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:clickable="false"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:background="@color/White"
+                    android:src="@drawable/img_about"
+                    />
+
+                <Button
+                    android:id="@+id/btn_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:hint="About Zakat"
+                    android:background="@color/White"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:drawableRight="@drawable/img_next_page"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil Pembuat"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:id="@+id/socialPanel"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:paddingTop="50px"
+                android:paddingBottom="50px"
+                android:text="Bagikan Aplikasi"
+                android:padding="10px">
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btn_fb"
+                        android:layout_width="64px"
+                        android:layout_height="64px"
+                        android:gravity="right"
+                        android:src="@drawable/img_facebook"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btn_google"
+                        android:layout_width="64px"
+                        android:layout_height="64px"
+                        android:gravity="center"
+                        android:src="@drawable/img_twitter"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="left"
+                    android:layout_width="64px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btn_instagram"
+                        android:layout_width="64px"
+                        android:layout_height="64px"
+                        android:gravity="left"
+                        android:src="@drawable/img_instagram"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
